@@ -1,0 +1,141 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* LIGHT MODE */
+body.light {
+  background: #ffffff;
+  color: #111;
+}
+
+/* DARK MODE */
+body.dark {
+  background: #0f0f0f;
+  color: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 120px 0;
+  position: relative;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #f5b301, #ff7a00);
+ 
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  padding: 20px 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-weight: 500;
+  color: inherit;
+}
+
+.split {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.split div {
+  flex: 1;
+}
+
+.glass {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .glass {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+button {
+  background: #111;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* Scroll Progress */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  transform-origin: 0%;
+  z-index: 9999;
+  background: linear-gradient(90deg, #f5b301, #ff7a00);
+}
+
+/* Wave */
+.wave {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+}
